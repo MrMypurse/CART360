@@ -72,7 +72,7 @@ a{
 
 h2{
   position: relative;
-  left: 4%;
+  left: 5%;
   text-align: left;
   font-size: 140px;
 }
@@ -83,14 +83,14 @@ h2:hover {
 
 h3{
   position: relative;
-  left: 4%;
+  left: 5%;
   text-align: left;
   font-size: 46px;
 }
 
 h4{
   position: relative;
-  left: 7%;
+  left: 8%;
   height: 400px;
   width: 600px;
   text-align: left;
@@ -100,7 +100,7 @@ h4{
 
 footer{
   position: relative;
-  left: 7%;
+  left: 8%;
   text-align: left;
   font-size: 14px;
 }
