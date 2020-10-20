@@ -120,8 +120,10 @@ h5{
   display: block;
   left: 7%;
 }
+
 footer{
   position: relative;
+  bottom: 10px;
   left: 8%;
   text-align: left;
   font-size: 14px;
