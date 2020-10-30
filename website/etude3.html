@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CART 360 HOME PAGE</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<style>
+
+label{
+  text-align: left;
+  font-size: 24px;
+  line-height: 2.5;
+}
+
+#part1{
+  position: relative;
+  left: 8%;
+  text-align: left;
+  font-size: 18px;
+  line-height: 2.5;
+
+}
+
+#part2{
+  position: relative;
+  left: 8%;
+  height: 400px;
+  width: 1000px;
+  text-align: left;
+  font-size: 18px;
+  line-height: 2.5;
+}
+
+#part3{
+  position: relative;
+  left: 8%;
+  text-align: left;
+  font-size: 18px;
+  line-height: 2.5;
+
+}
+
+</style>
+
+<body>
+
+  <!--the navigation bar on top with drop down -->
+  <div class="navigation">
+    <button class="dropbtn"><a href="index.html">HOME</a></button>
+    <div class="dropdown" style="float:right">
+      <button class="dropbtn">ETUDES</button>
+      <div class="dropdown-content">
+        <a href="etude1.html">0001</a>
+        <a href="etude2.html">0002</a>
+        <a href="etude3.html">0003</a>
+        <a href="etude4.html">0004</a>
+        <a href="etude5.html">0005</a>
+        <a href="etude6.html">0006</a>
+      </div>
+    </div>
+    <div class="dropdown" style="float:right">
+      <button class="dropbtn">REFLECTIONS</button>
+      <div class="dropdown-content">
+        <a href="reflection1.html">0001</a>
+        <a href="reflection2.html">0002</a>
+      </div>
+    </div>
+
+    <div class="dropdown" style="float:right">
+      <button class="dropbtn">PROJECT</button>
+      <div class="dropdown-content">
+        <a href="proposal.html">PROPOSAL</a>
+        <a href="prototype.html">PROTOTYPE</a>
+        <a href="artifact.html">ARTIFACT</a>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <!-- the header div -->
+  <header>
+    <h2>ETUDE 3</h2>
+    <br>
+    <h3> This etude is divided into 3 parts. </h3>
+    </header>
+    <br><br><br>
+    <div id = "part1">
+      <label>PART I </label><br>
+      <img src="images/Building_Progress1.jpg" width="800" height="500">
+      <p>Set up the Arduino with its power source and connect it with the breadboard.</p>
+      <img src="images/Building_Progress2.jpg" width="800" height="500">
+      <p>Connect the LED lights with 200 resisters, and connect to the Arduino’s digital pins 9, 10, 11.</p>
+      <img src="images/Building_Progress3.jpg" width="800" height="500">
+      <p>Connect the Piezo Buzzer to the breadboard. And connect it to the Arduino’s analog pin 3.</p>
+      <img src="images/Building_Progress4.jpg" width="800" height="500">
+      <p>Connect 4 buttons to the 10k resistors and to the AO pin in the Arduino.</p>
+      <img src="images/Building_Progress5.jpg" width="800" height="500">
+      <p>Connect the mode button with a 10k resistor and to the Arduino’s digital input pin 2.</p>
+    </div>
+
+    <div id ="part2">
+      <label>PART II</label>
+      <p>The electricity travels from the ground bus, through the 10k resistors to the button keys. Ohm's law states that the voltage across a resistor is proportional to the current, and the constant value of proportionality is the resistance. In
+        this case, 3 10k resistors are in series. They are attached across the terminals of a 5 volt battery, so the total resistance is 30 000 ohms. Which means that a current of 5 / 30000 = 1.6 x 10 -4 amperes flows through each resistor. The input
+        from the push button to change mode is connected to the pin 2 as digital input. This digital input sends the information via Arduino to the key buttons to control the way they behave. Since the key buttons are connected to the AO as analog
+        buttons, Arduino outputs this information via the Piezo Buzzer, which is connect to the digital pin 3.
+      </p>
+    </div>
+    <div id = "part3">
+      <label>PART III </label>
+    </div>
+
+
+
+</body>
+
+</html>
