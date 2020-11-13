@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CART 360 HOME PAGE</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--the navigation bar on top with drop down -->
+  <div class="navigation">
+    <button class="dropbtn"><a href="index.html">HOME</a></button>
+    <div class="dropdown" style="float:right">
+      <button class="dropbtn">ETUDES</button>
+      <div class="dropdown-content">
+        <a href="etude1.html">0001</a>
+        <a href="etude2.html">0002</a>
+        <a href="etude3.html">0003</a>
+        <a href="etude4.html">0004</a>
+        <a href="etude5.html">0005</a>
+        <a href="etude6.html">0006</a>
+      </div>
+    </div>
+    <div class="dropdown" style="float:right">
+      <button class="dropbtn">REFLECTIONS</button>
+      <div class="dropdown-content">
+        <a href="reflection1.html">0001</a>
+        <a href="reflection2.html">0002</a>
+      </div>
+    </div>
+
+    <div class="dropdown" style="float:right">
+      <button class="dropbtn">PROJECT</button>
+      <div class="dropdown-content">
+        <a href="proposal.html">PROPOSAL</a>
+        <a href="prototype.html">PROTOTYPE</a>
+        <a href="artifact.html">ARTIFACT</a>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+
+<!-- the header div -->
+<header>
+  <div>
+    <h2>PROJECT PROTOTYPE REPORT</h2>
+    <br>
+    <h3> HEAD IN THE CLOUDS </h3>
+  </div>
+</header>
+<div>
+<h4>
+  <p>HEAD IN THE CLOUDS is an interative light installation. The light changes depending on the viewer's muscle movement.</p>
+</h4>
+<div class="img">
+  <img src="images/concept.jpg" width="1200" height="900">
+</div>
+<h5>
+  <p><b> - Written Response which addresses and relates the implicit concerns of Why Do We Prototype? & Fidelity Levels to the development process of your Physical Prototype
+    </b></p>
+  <p> My initial idea of Head in the Clouds is an interactive sound and light wearable that is meant to be wear on the viewer's head. The light and the sound change depending on the viewer's head movement. I wanted the viewers to not only see and experience the project but become a part of the project. The viewers are not only observing the installation from a distance, but they have a chance to be completely inside the project. I intend for “Head in the Clouds” to be an immersive experience that makes people reflect on our perspective and the idea of being “inside” and “outside”. During my reflections, I thought about whether my project should offer the viewers an internal examination with my project by cutting users off completely from the world and isolating them in a dark box, which takes them from a comfortable space to an uncomfortable space. On the contrary, my project can also explore the machinery of our own mind, which means that I can guide users through emotional state and to arrive at a more comfortable position. I wanted my project to seem welcoming, but it makes users question themselves once they are in that certain space. The project seems playful, but it isn’t, which might help the users realize something about themselves internally. After reflecting on these ideas, I decided that I want to attack the muscle sensor to the users, which makes them a part of the project (the installation wouldn’t work without their muscle movement). The LED lights will correspond to the movement of the muscle, so the users are essentially in control in a completely dark/unknown space. Therefore, the experience I want to convey is a transition of feeling unsure to feeling more at comfort/ in control. I have also been reflecting on the questions: why do we put this installation on? I think that I want the users to break out of their comfort zone by stepping into something unknown but that seems playful. And they will eventually gain the courage to observe more, realize that they are in control of this space. So overall, it should be an empowering experience which the users reflect on their fears/ overcome them.
+  </p>
+  <p><b> - Technical Evaluation of Sensors and their associated Affordances which would ideally support your project’s proposed Interaction Design Strategy
+  </p></b>
+  <p> Arduino Uno: The microcontroller can read analogue EMG signals from the muscle sensor’s output. It is also used to control the LED light strips which changes according to the EMG signals.
+  </p>
+  <p>LED light strips: The light changes according to the analogue EMG signals. When the muscle flexes/relaxes, the signal number goes up / down, which means that the LED lights will change its brightness and colors.
+  </p>
+  <p>Myoware muscle sensor: It can be used to get EMG signals from our body. The output can be read using Arduino which can read analogue signals. As the muscle contracts or flexes the electrical activity increases and the analogue output of the Myoware sensor increases.  As the muscle relaxers the electrical activity of the muscle decreases and the analogue output of the Myoware sensor decreases.
+  </p><br>
+  <p><b> - Think about the notion of empowerment. Is your artifact really helping or challenging users or is it just another psychological prosthesis?
+  </p></b>
+  <p>I would like to focus on the idea of “headspace” and challenge the viewers to reflect on their own headspace. I intend for the viewers to enter a hyper focus space, and the discomfort of being in a tight space surrounded with unusual
+    sounds/lights will challenge them. I am not sure whether my installation will give the viewer’s the notion of empowerment. On the contrary, I feel like my project will take a certain amount of power away from them.
+  </p><br>
+  <p><b> - Think about how to successfully communicate your intentions - what Interaction Design Strategies will you employ? What are you trying to tell us?
+  </p></b>
+  <p>I intend to employ physical objects/space, visual representations and behaviour. I will use physical objects/space, like the house and the window, as frames to limit the physical space, so that the viewers can focus on the installation alone. I
+    will also use physical objects/space to separate “inside” and “outside” of the project. The viewer’s body also becomes a part of the physical space. For visual representations, the users can manipulate the LED lights with their head movement. The
+    lights will change color depending on how fast the user is moving. As for behaviours, the viewer’s actions are directly linked to the behaviours of the lights/ sounds.
+  </p><br>
+  <p><b> - A Non-Technical Evaluation of Sensors and their associated affordances which would ideally support your project's proposed Interaction Design strategy.
+  </p></b>
+  <p>I will use physical materials, such as cardboard and wood planks to build the house and the window. And I will use soft materials like cottons and tissue to build the clouds in the bottom. For the lights, I will use LED light strips and align
+    them on the inside of the house. I will also need a micro controller to manipulate the lights, including the color and the brightness. And since I intend for the light to change depending on the user’s movement, I will likely need a motion
+    detector. For the sounds, I will need to attach a speak to the body of the house, I also might incorporate poems into the project. </p>
+  <br>
+  <p><b> - Has your Project’s initial intention or supposed meaning changed over the course of researching and implementing the Physical Prototype? If YES or NO – Explain why?
+  </p></b>
+  <p>Yes, my project’s initial intention has changed over the course of researching and implementing the physical prototype. In the early stage of my proposal process, I was unsure about the supposed meaning behind the project. I felt that there are many directions I can take. I am much surer about the intention of the project now that I have a physical prototype. Putting myself in an actual dark box made me realize how isolated the space can be and how uncomfortable that might make the users feel. I then thought about how users can use their body, more specifically, the EMG signals from their muscle, to take control of the space and to overcome their fears/anxiousness.
+  </p>
+
+</h5>
+</div>
+
+</body>
+</html>
