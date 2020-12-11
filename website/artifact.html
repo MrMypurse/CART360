@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CART 360 ARTIFACT PAGE</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<style>
+  #para {
+    position: relative;
+    height: auto;
+    width: 1200px;
+    left: 5%;
+    font-size: 18px;
+    line-height: 2.5;
+  }
+
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+
+</style>
+
+<body>
+
+  <!--the navigation bar on top with drop down -->
+  <div class="navigation">
+    <button class="dropbtn"><a href="index.html">HOME</a></button>
+    <div class="dropdown" style="float:right">
+      <button class="dropbtn">ETUDES</button>
+      <div class="dropdown-content">
+        <a href="etude1.html">0001</a>
+        <a href="etude2.html">0002</a>
+        <a href="etude3.html">0003</a>
+      </div>
+    </div>
+    <div class="dropdown" style="float:right">
+      <button class="dropbtn">REFLECTIONS</button>
+      <div class="dropdown-content">
+        <a href="reflection1.html">0001</a>
+        <a href="reflection2.html">0002</a>
+        <a href="reflection3.html">0003</a>
+      </div>
+    </div>
+
+    <div class="dropdown" style="float:right">
+      <button class="dropbtn">PROJECT</button>
+      <div class="dropdown-content">
+        <a href="proposal.html">PROPOSAL</a>
+        <a href="prototype.html">PROTOTYPE</a>
+        <a href="artifact.html">ARTIFACT</a>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <!-- the header div -->
+  <header>
+    <h2>ARTIFACT DOCUMENTATION</h2>
+    <br>
+    <h3> HEAD IN THE CLOUDS </h3>
+  </header>
+  <br><br><br>
+  <div id="para">
+    <p>PROGRESSION</p>
+    <p>I start by connecting the Myoware to Arduino Uno and make sure that the EMG signal is detected.</p>
+    <p>Then I attached the RGB LED strip to the Arduino Uno. The light is first randomized and very bright till the user’s muscle movement is detected. The light then changes its color and brightness according to the EMG signal. I had difficulty deciding the pattern of the lighting. I finally decided on a fading pattern.
+    </p>
+
+    <p>I use the Adafruit's neopixel library to create the transition effect in the LED lights</p>
+    <img src="images/code1.png">
+    <img src="images/code2.png">
+    <p> After some testing, I realize that the light is too bright. I then adjust the code so that the user's muscle movement can influence the lights' intensity.</p>
+    <img src="images/code3.png">
+    <p>After I make sure that the LED lights are functioning correctly with the Myoware sensor, it is time to create the frequency using the speaker.Both speakers are connected to Arduino Uno through the breadboard.
+    </p>
+    <img src="images/speaker1.jpg">
+    <img src="images/code4.png">
+
+    <p> Here is the fully functional circuit in action </p>
+    <img src="images/light1.jpg" width=700px height=400px>
+    <br>
+    <p>Bibliography</p>
+    <p>Hsu, Yuan-Yao. Wenn-Chieh, Wan-Chen Lee, and Rung-Huei Liang. “Botanical Printer: An Exploration on Interaction Design with Plantness”. Proceedings of the 2018 Designing Interactive Systems Conference. 2018.
+    </p>
+    <p>Ikinamo.“Interactive plants reacts and convey emotions”. YouTube. 2012.</p>
+    <p>Sato, Munehiko. “Botanicus Interacticus: Interactive Plant Technology”. 2012. http://www.satomunehiko.com/works/botanicus-interacticus/</p>
+  </div>
+
+
+  <!-- the footer div -->
+  <footer>
+    <p> Made by Janet Sun , Concordia University, Fall 2020. </p>
+  </footer>
+</body>
+
+</html>
