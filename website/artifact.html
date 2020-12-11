@@ -21,6 +21,23 @@
     margin-left: auto;
     margin-right: auto
   }
+  iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+  .column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 </style>
 
@@ -70,26 +87,43 @@
     <p>I start by connecting the Myoware to Arduino Uno and make sure that the EMG signal is detected.</p>
     <p>Then I attached the RGB LED strip to the Arduino Uno. The light is first randomized and very bright till the user’s muscle movement is detected. The light then changes its color and brightness according to the EMG signal. I had difficulty deciding the pattern of the lighting. I finally decided on a fading pattern.
     </p>
+    <iframe src="https://drive.google.com/file/d/1nndkpck_sNvo1dYlCBro_asO9hrhdT-C/preview" width="700" height="400"></iframe>
 
     <p>I use the Adafruit's neopixel library to create the transition effect in the LED lights</p>
     <img src="images/code1.png">
     <img src="images/code2.png">
+
+
     <p> After some testing, I realize that the light is too bright. I then adjust the code so that the user's muscle movement can influence the lights' intensity.</p>
     <img src="images/code3.png">
     <p>After I make sure that the LED lights are functioning correctly with the Myoware sensor, it is time to create the frequency using the speaker.Both speakers are connected to Arduino Uno through the breadboard.
     </p>
-    <img src="images/speaker1.jpg">
+    <img src="images/speaker1.jpg" width=700px height=400px>
+    <p> I am also using the volume library to control the volume. The goal is to have a very subtle frequency that is not disturbing. </p>
     <img src="images/code4.png">
+    <p> I recorded everything with my cheap Android, so we can't hear the frequency. But here is a recording of the frequency in action. </p>
+
 
     <p> Here is the fully functional circuit in action </p>
-    <img src="images/light1.jpg" width=700px height=400px>
-    <br>
-    <p>Bibliography</p>
-    <p>Hsu, Yuan-Yao. Wenn-Chieh, Wan-Chen Lee, and Rung-Huei Liang. “Botanical Printer: An Exploration on Interaction Design with Plantness”. Proceedings of the 2018 Designing Interactive Systems Conference. 2018.
+    <iframe src="https://drive.google.com/file/d/1nU8xmPVRJp6N3qGrMP1saKPbQefLc4D-/preview" width="700" height="400"></iframe>
+    <p> For the “house”. I painted the cardboard black by using gesso. I then put fabric on the inside to make sure that the material isn’t too rough on the skin. I also built a small “balcony” in the back to fit all the controllers/sensors. After making sure that the circuit is functioning correctly, I glued the LED light strip and the speakers inside the house. Then I attach their wires through a hold at the back to the “balcony”.
     </p>
-    <p>Ikinamo.“Interactive plants reacts and convey emotions”. YouTube. 2012.</p>
-    <p>Sato, Munehiko. “Botanicus Interacticus: Interactive Plant Technology”. 2012. http://www.satomunehiko.com/works/botanicus-interacticus/</p>
-  </div>
+    <img src="images/build1.jpg" width=700px height=400px>
+    <br>
+    <img src="images/build2.jpg" width=700px height=400px>
+
+    <p>To decorate the installation, I use fake moss and polyester as clouds to create a more organic look. </p>
+    <p>Finaly, to hang the house. I use gorilla tape to create a "hook" on the ceiling and pass it through with a string to hang the house up. </p>
+    <div class="column"><img src="images/build3.jpg" width=400px height=700px></div>
+    <img src="images/build4.jpg" width=400px height=700px>
+
+    <p>Here is the installation without user interaction in a dim light</p>
+    <iframe src="https://drive.google.com/file/d/1kU9LZ7zBT4p_YTUxjyxz_OII5mPmyrsL/preview" width="700" height="400"></iframe>
+    <p>The installation without user interactin in a completely dark environment</p>
+    <p>The installation from the user's perspective </p>
+    <iframe src="https://drive.google.com/file/d/1mHduQJKtK1p01RwqcUypCLiNVlGWqomr/preview" width="700" height="400"></iframe>
+
+      </div>
 
 
   <!-- the footer div -->
