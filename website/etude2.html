@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CART 360 ETUDE2 PAGE</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<style>
+
+label{
+  text-align: left;
+  font-size: 24px;
+  line-height: 2.5;
+}
+
+#part1{
+  position: relative;
+  left: 8%;
+  text-align: left;
+  font-size: 18px;
+  line-height: 2.5;
+
+}
+
+#part2{
+  position: relative;
+  left: 8%;
+  height: 400px;
+  width: 1000px;
+  text-align: left;
+  font-size: 18px;
+  line-height: 2.5;
+}
+
+#part3{
+  position: relative;
+  left: 8%;
+  text-align: left;
+  font-size: 18px;
+  line-height: 2.5;
+}
+
+#part4{
+  position: relative;
+  left: 8%;
+  text-align: left;
+  font-size: 18px;
+  line-height: 2.5;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+
+iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+
+
+</style>
+
+<body>
+
+  <!--the navigation bar on top with drop down -->
+  <div class="navigation">
+    <button class="dropbtn"><a href="index.html">HOME</a></button>
+    <div class="dropdown" style="float:right">
+      <button class="dropbtn">ETUDES</button>
+      <div class="dropdown-content">
+        <a href="etude1.html">0001</a>
+        <a href="etude2.html">0002</a>
+        <a href="etude3.html">0003</a>
+      </div>
+    </div>
+    <div class="dropdown" style="float:right">
+      <button class="dropbtn">REFLECTIONS</button>
+      <div class="dropdown-content">
+        <a href="reflection1.html">0001</a>
+        <a href="reflection2.html">0002</a>
+      </div>
+    </div>
+
+    <div class="dropdown" style="float:right">
+      <button class="dropbtn">PROJECT</button>
+      <div class="dropdown-content">
+        <a href="proposal.html">PROPOSAL</a>
+        <a href="prototype.html">PROTOTYPE</a>
+        <a href="artifact.html">ARTIFACT</a>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <!-- the header div -->
+  <header>
+    <h2>ETUDE 2</h2>
+    <br>
+    <h3> This etude is divided into 4 parts. </h3>
+    </header>
+    <br><br><br>
+    <div id = "part1">
+      <label>PART I </label><br>
+      <img src="images/e2.1.jpg" width="800" height="500">
+      <p>Connect Arduino to the power source and connect breadboard through the ground.</p>
+      <img src="images/e2.2.jpg" width="800" height="500">
+      <p>Connect the button through a 10k resistor and a jump from the ground.</p>
+      <img src="images/e2.3.jpg" width="800" height="500">
+      <p>Connect one LED light with a 200 resistor and a jump through the ground. The other side of the LED is connect to the Arduino.
+      </p>
+      <img src="images/e2.4.jpg" width="800" height="500">
+      <p>Repeat the last step till all LED lights are connected.
+      </p>
+    </div>
+    <div id ="part2">
+      <label>PART II</label>
+      <p>The build circuit is more reliable than the alternate circuit. Because the build circuit contains parallel circuits, meaning that all the resistors are placed where the top leads and bottom leads are connected horizontally. The current travels from the positive end of the battery to the negative end, but it distributes itself evenly through each branch. The voltage is constant through the circuit. On the other hand, the alternate circuit only uses one resistor. The current travels from the positive end of the battery to the negative end in the same fashion, but the voltage distribution is not even through each branch.    </p>
+    </div>
+    <div id = "part3">
+      <label>PART III </label>
+      <p>The area highlighted by the red rectangle is a button that is connect to the LED lights within the circuit, and its functionality is to reset the LEG lights. The long red lead on the breadboard is connect from the Arduino (voltage source) to the ground bus(positive). It is also connected to the resistor, which is connected to the black lead and the button. The other end of the black lead is connected to the “Reset” on Arduino to define the functionality of the button. The electricity then flows through from the button to the black jumper, which is connected to the ground bus again(negative). </p>
+    </div>
+    <div id = "part4">
+      <label>PART III </label>
+      <p>Gif of circuit in action</p>
+      <img src="images/e2.gif" width="800" height="500">
+
+
+    </div>
+
+
+
+</body>
+
+</html>
